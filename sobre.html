@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hic sunt 5V</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="geral">
+        <div class="menu">
+            <div id="item1">
+                <a href="index.html">Mapa</a>
+            </div>
+            <div id="item2">
+                <a href="sobre.html">Sobre</a>
+            </div>
+        </div>
+        <div class="caixaTexto">
+            <div id="itemMapa">
+                <p>Em alguns mapas antigos, cartógrafos usavam a expressão <em>hic sunt leones</em> ou <em>hic sunt dracones</em> para especificar regiões desconhecidas por eles. Fazendo um trocadilho, pelo meu conhecimento superficial do universo Arduino, <em>Hic sunt 5V</em> é um mapeamento dos pinos e componentes da placa Arduino Uno R3.</p>
+
+                <p>O mapeamento se refere exclusivamente à placa Arduino Uno R3 com microcontrolador ATmega16U2. Em caso de dúvida, , use um multímetro para descobrir as tensões dos pinos, teste de continuidade para verificar quais pinos estão interconectados, e consulte a documentação oficial do Arduino.</p>
+
+                <p>Certamente como parte do movimento decolonial, o Arduino mudou a terminoloia de <em>Master/Slave</em> para <em>Controller/Peripheral</em>. Portanto, deixou de usar os termos <em>Master Out Slave In</em> (MOSI), <em>Master In Slave Out</em> (MISO), <em>Slave Select (SS)</em>, e agora usa, respectivamente, <em>Controller Out Peripheral In</em> (COPI), <em>Controller In Peripheral Out</em> (CIPO), <em>Chip Select</em> (CS), os quais estão indicados no mapa.</p>
+
+                <p>As informações e especificações foram obtidas do site oficial do Arduino, disponível em: <a href="https://docs.arduino.cc/hardware/uno-rev3" style="color: #ffcc00;">https://docs.arduino.cc/hardware/uno-rev3</a>.</p>
+            <p>Projeto desenvolvido por <a href="https://ciberlandia.pt/@arturzyx" style="color:#ffcc00;">@arturzyx</a></p>
+            <p>Cariri, 2023.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

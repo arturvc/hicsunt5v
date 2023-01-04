@@ -1,0 +1,420 @@
+[{
+        "xy": [841, 1985],
+        "nome": "Not Connected (NC)",
+        "descrição": "<em>Hic Sunt Dracones</em>",
+        "obs": "Este pino não tem funcionalidade. A posição do pino é reservada para atualizações da placa.",
+        "pino": "pinoCinza.png"
+    },
+    {
+        "xy": [841, 2120],
+        "nome": "IOREF",
+        "descrição": "<em>Hic Sunt Dracones</em>",
+        "obs": "Na documentação do Arduino é descrito como: '[...] fornece a referência de tensão com a qual o microcontrolador opera. Um shield configurado corretamente pode ler a tensão do pino IOREF e selecionar a fonte de alimentação apropriada ou habilitar conversores de tensão nas saídas para trabalhar com 5V ou 3,3V'. (Tradução nossa).",
+        "pino": "pinoCinza.png"
+    },
+    {
+        "xy": [841, 2255],
+        "nome": "Reset",
+        "descrição": "Pino para resetar a placa.",
+        "obs": "Usar tensão LOW para resetar a placa. Este pino possibilita adicionar um botão de reset em shields, pois o botão de reset no Arduino fica coberto pelo shield. ",
+        "pino": "pinoCinza.png"
+    },
+    {
+        "xy": [841, 2395],
+        "nome": "+3.3V ou 3v3",
+        "descrição": "Pino com tensão de saída de 3.3V regulado pela placa",
+        "obs": "A corrente máxima do pino de 3.3V é 50mA.",
+        "pino": "pinoVermelho.png"
+    },
+    {
+        "xy": [841, 2530],
+        "nome": "5V",
+        "descrição": "Pino com tensão de saída de 5V regulado pela placa.",
+        "obs": "A corrente máxima do pino de 5V depende de como a placa está sendo alimentada, se for pela porta USB conectada no computador, é provável que seja limitada em 500mA. A alimentação de tensão do Arduino não deve ser por este pino, pois ignora o regulador interno e pode danificar a placa.",
+        "pino": "pinoVermelho.png"
+    },
+    {
+        "xy": [841, 2670],
+        "nome": "Ground (GND)",
+        "descrição": "Pino com tensão de referência 'terra' (<em>ground</em>).",
+        "obs": "O <em>ground</em> é o polo negativo, por vezes indicado com o sinal '-'. O ground não equivale a tensão LOW do Arduino.",
+        "pino": "pinoAzul.png"
+    },
+    {
+        "xy": [841, 2805],
+        "nome": "Ground (GND)",
+        "descrição": "Pino com tensão de referência 'terra' (<em>ground</em>).",
+        "obs": "O <em>ground</em> é o polo negativo, por vezes indicado com o sinal '-'. O ground não equivale a tensão LOW do Arduino.",
+        "pino": "pinoAzul.png"
+    },
+    {
+        "xy": [841, 2940],
+        "nome": "Vin",
+        "descrição": "Pino para alimentar a placa com tensão de entrada positiva.",
+        "obs": "O Arduino pode ser alimentado com o polo positivo conectado neste pino (e o polo negativo conectado em um pino GND) ou pelo conector P4 (jack) da placa, com tensão de alimentação na faixa de 6 a 20V, e preferencialmente de 7 a 12V. Se o Arduino estiver plugado na porta USB, este pino tem tensão de saída de 5V, se estiver plugado pelo conector P4 com tensão <em>X</em>, tem a mesma tensão <em>X</em>.",
+        "pino": "pinoVermelho.png"
+    },
+    {
+        "xy": [841, 3225],
+        "nome": "A0 / D14",
+        "descrição": "Pino de entrada analógica A0 que pode ser usado como pino de entrada ou saída digital 14.",
+        "obs": "A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [841, 3355],
+        "nome": "A1 / D15",
+        "descrição": "Pino de entrada analógica A1 que pode ser usado como pino de entrada ou saída digital 15.",
+        "obs": "A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [841, 3485],
+        "nome": "A2 / D16",
+        "descrição": "Pino de entrada analógica A2 que pode ser usado como pino de entrada ou saída digital 16.",
+        "obs": "A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [841, 3630],
+        "nome": "A3 / D17",
+        "descrição": "Pino de entrada analógica A3 que pode ser usado como pino de entrada ou saída digital 17.",
+        "obs": "A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [841, 3760],
+        "nome": "A4 / D18 / SDA",
+        "descrição": "Pino de entrada analógica A4 que pode ser usado como pino de entrada ou saída digital 18. Em comunicação I²C (Inter-Integrated Circuit) também chamada TWI (Two-Wire Interface), corresponde ao pino da linha de dados (SDA).",
+        "obs": "A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [841, 3900],
+        "nome": "A5 / D19 / SCL",
+        "descrição": "Pino de entrada analógica A5 que pode ser usado como pino de entrada ou saída digital 19. Em comunicação I²C (Inter-Integrated Circuit) também chamada TWI (Two-Wire Interface), corresponde ao pino da linha de clock (SCL).",
+        "obs": "A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3460, 3915],
+        "nome": "D0 / RX",
+        "descrição": "Pino de entrada ou saída digital. É o pino Receiver (RX) da porta serial (também chamada de UART ou USART)",
+        "obs": "A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador. Como é usado na comunicação serial, cuidado ao conectar algo a este pino, pois pode interferir na comunicação, inclusive causando falhas de uploads da placa.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3460, 3770],
+        "nome": "D1 / TX",
+        "descrição": "Pino de entrada ou saída digital. É o pino Transmitter (TX) da porta serial (também chamada de UART ou USART)",
+        "obs": "A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador. Como é usado na comunicação serial, cuidado ao conectar algo a este pino, pois pode interferir na comunicação, inclusive causando falhas de uploads da placa.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3460, 3640],
+        "nome": "D2",
+        "descrição": "Pino de entrada ou saída digital.",
+        "obs": "A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador. Este pino é a interrupção 0, usada na função <span style='font-family: monospace'>attachInterrupt()</span>.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3460, 3500],
+        "nome": "~D3",
+        "descrição": "Pino de entrada ou saída digital, e também é saída PWM (Pulse Width Modulation).",
+        "obs": "O pino PWM (indicada na placa pelo til ~) pode ser usado pra simular saída analógica com a função <span style='font-family: monospace'>analogWrite()</span>. A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador. Este pino é a interrupção 1, usada na função <span style='font-family: monospace'>attachInterrupt()</span>.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3460, 3365],
+        "nome": "D4",
+        "descrição": "Pino de entrada ou saída digital",
+        "obs": "A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3460, 3225],
+        "nome": "~D5",
+        "descrição": "Pino de entrada ou saída digital, e também é saída PWM (Pulse Width Modulation).",
+        "obs": "O pino PWM (indicada na placa pelo til ~) pode ser usado pra simular saída analógica com a função <span style='font-family: monospace'>analogWrite()</span>. A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3460, 3090],
+        "nome": "~D6",
+        "descrição": "O pino PWM (indicada na placa pelo til ~) pode ser usado pra simular saída analógica com a função <span style='font-family: monospace'>analogWrite()</span>. A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3460, 2955],
+        "nome": "D7",
+        "descrição": "Pino de entrada ou saída digital.",
+        "obs": "A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3460, 2730],
+        "nome": "D8",
+        "descrição": "Pino de entrada ou saída digital.",
+        "obs": "A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3460, 2590],
+        "nome": "~D9",
+        "descrição": "Pino de entrada ou saída digital, e também é saída PWM (Pulse Width Modulation).",
+        "obs": "O pino PWM (indicada na placa pelo til ~) pode ser usado pra simular saída analógica com a função <span style='font-family: monospace'>analogWrite()</span>. A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3460, 2450],
+        "nome": "~D10 / CS",
+        "descrição": "Pino de entrada ou saída digital, e também é saída PWM (Pulse Width Modulation). É o pino de <em>Chip Select</em> (CS) na comunição <em>Serial Peripheral Interface </em> (SPI).",
+        "obs": "O pino PWM (indicada na placa pelo til ~) pode ser usado pra simular saída analógica com a função <span style='font-family: monospace'>analogWrite()</span>. A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador. O Arduino mudou a terminoloia de <em>Master/Slave</em> para <em>Controller/peripheral</em>, atualizando o termo <em>Slave Select</em> (SS) para <em>Chip Select</em> (CS)",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3460, 2320],
+        "nome": "~D11 / COPI",
+        "descrição": "Pino de entrada ou saída digital, e também é saída PWM (Pulse Width Modulation). É o pino de <em>Controller Out Peripheral In</em> (COPI) na comunição <em>Serial Peripheral Interface </em> (SPI).",
+        "obs": "O pino PWM (indicada na placa pelo til ~) pode ser usado pra simular saída analógica com a função <span style='font-family: monospace'>analogWrite()</span>. A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador. O Arduino mudou a terminoloia de <em>Master/Slave</em> para <em>Controller/Peripheral</em>, atualizando o termo <em>Master Out Slave In</em> (MOSI) para <em>Controller Out Peripheral In</em> (COPI) - pode ser encontrado como <em>Main Out Secondary In</em>.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3460, 2180],
+        "nome": "D12 / CIPO",
+        "descrição": "Pino de entrada ou saída digital, e também é saída PWM (Pulse Width Modulation). É o pino de <em>Controller In, Peripheral Out</em> (CIPO) na comunição <em>Serial Peripheral Interface </em> (SPI).",
+        "obs": "A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador. O Arduino mudou a terminoloia de <em>Master/Slave</em> para <em>Controller/Peripheral</em>, atualizando o termo <em>Master In Slave Out</em> (MISO) para <em>Controller In, Peripheral Out </em> (CIPO) - pode ser encontrado como <em>Main In Secondary Out</em>.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3460, 2040],
+        "nome": "D13 / SCK",
+        "descrição": "Pino de entrada ou saída digital. É o pino de <em>Serial Clock</em> (SCK) na comunição <em>Serial Peripheral Interface </em> (SPI).",
+        "obs": "A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador. O pino está conectado ao LED que vem instalado na placa (normalmente, indicado pela letra L), e na programação pode ser referenciado pela constante <span style='font-family: monospace'>LED_BUILTIN</span>.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3460, 1900],
+        "nome": "GND",
+        "descrição": "Pino com tensão de referência 'terra' (<em>ground</em>).",
+        "obs": "O ground é o polo negativo, por vezes indicado com o sinal '-'. O ground não equivale a tensão LOW do Arduino.",
+        "pino": "pinoAzul.png"
+    },
+    {
+        "xy": [3460, 1770],
+        "nome": "AREF",
+        "descrição": "Tensão de referência para as entradas analógicas.",
+        "obs": "O pino AREF (<em>Analog Reference</em>) pode ser usado para entrada de tensão externa com objetivo de fornecer uma tensão de referência para as entradas analógicas, configurada pela função  <span style='font-family: monospace'>analogReference()</span>. Atenção: não usar tensão externa menor que 0V e nem maior que 5V, pois pode danificar o microcontrolador.",
+        "pino": "pinoCinza.png"
+    },
+    {
+        "xy": [3460, 1630],
+        "nome": "A4 / D18 / SDA",
+        "descrição": "Pino de entrada analógica A4 que pode ser usado como pino de entrada ou saída digital 18. Em comunicação I²C (Inter-Integrated Circuit) também chamada TWI (Two-Wire Interface), corresponde ao pino da linha de dados (SDA).",
+        "obs": "A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3460, 1490],
+        "nome": "A5 / D19 / SCL",
+        "descrição": "Pino de entrada analógica A5 que pode ser usado como pino de entrada ou saída digital 19. Em comunicação I²C (Inter-Integrated Circuit) também chamada TWI (Two-Wire Interface), corresponde ao pino da linha de clock (SCL).",
+        "obs": "A corrente operacional recomendada é de até 20mA, e não deve ultrapassar 40mA com risco de danificar o microcontrolador.",
+        "pino": "pinoLaranja.png"
+    },
+    {
+        "xy": [3058, 1986],
+        "nome": "LED",
+        "descrição": "LED interno, normalmente indicado pela letra L",
+        "obs": "O LED está conectado ao pino digital D13. Na programação pode ser referenciado pela constante <span style='font-family: monospace'>LED_BUILTIN</span>. Normalmente, a cor do LED é amarela.",
+        "pino": "pinoVerde.png"
+    },
+    {
+        "xy": [2710, 1986],
+        "nome": "TX LED",
+        "descrição": "LED indicativo do <em>transmitter</em> (TX) da porta serial.",
+        "obs": "Durante o uso da comunicação serial pelo pino D1 / TX o LED deve piscar. Normalmente, a cor do TX LED é amarela.",
+        "pino": "pinoVerde.png"
+    },
+    {
+        "xy": [2561, 1986],
+        "nome": "RX LED",
+        "descrição": "LED indicativo do <em>receiver</em> (RX) da porta serial.",
+        "obs": "Durante o uso da comunicação serial pelo pino D0 / RX o LED deve piscar. Normalmente, a cor do TX LED é amarela. ",
+        "pino": "pinoVerde.png"
+    },
+    {
+        "xy": [2698, 3636],
+        "nome": "Power LED",
+        "descrição": "LED para indicar que a placa está ligada.",
+        "obs": "Normalmente, a cor do Power LED é verde.",
+        "pino": "pinoVerde.png"
+    },
+    {
+        "xy": [1103, 792],
+        "nome": "Conector P4",
+        "descrição": "Conector (ou <em>jack</em>) para alimentar a placa.",
+        "obs": "Conector P4 de 2.1x5.5mm, com polo positivo no centro e polo negativo na borda do plugue. A tensão de alimentação pode ser na faixa de 6 a 20V, e preferencialmente de 7 a 12V. na. O polo positivo da tensão alimentada pelo conector P4 é replicado no pino Vin.",
+        "pino": "pinoMagenta.png"
+    },
+    {
+        "xy": [2807, 792],
+        "nome": "Conector USB",
+        "descrição": "Conector USB tipo B.",
+        "obs": "Conector USB liadao ao microcontrolador ATMega16U2. A tensão máxima de entrada é de 5.5V, e a corrente máxima é provável que seja 500mA.",
+        "pino": "pinoMagenta.png"
+    },
+    {
+        "xy": [1300, 1470],
+        "nome": "Capacitor",
+        "descrição": "Capacitor SMD modelo: EEE-1EA470WP 25V.",
+        "obs": "Componente eletrônico.",
+        "pino": "pinoPiscina.png"
+    },
+    {
+        "xy": [1300, 1860],
+        "nome": "Capacitor",
+        "descrição": "Capacitor SMD modelo: EEE-1EA470WP 25V",
+        "obs": "Componente eletrônico.",
+        "pino": "pinoPiscina.png"
+    },
+    {
+        "xy": [851, 1656],
+        "nome": "Diodo",
+        "descrição": "Diodo retificador modelo: CGRA4007-G.",
+        "obs": "Componente eletrônico.",
+        "pino": "pinoPiscina.png"
+    },
+    {
+        "xy": [1713, 2978],
+        "nome": "ATmega328P",
+        "descrição": "Microcontrolador",
+        "obs": "A Unidade Central de Processamento (CPU) do Arduino, com 32KB de memória Flash, 2KB de SRAM, e 1KB de EEPROM. O ATmega328P não é soldado na placa e pode ser facilmente substituído.",
+        "pino": "pinoPiscina.png"
+    },
+    {
+        "xy": [2155, 1544],
+        "nome": "Oscilador",
+        "descrição": "Oscilador modelo: ECS-160-20-4X-DU",
+        "obs": "Componente eletrônico.",
+        "pino": "pinoPiscina.png"
+    },
+    {
+        "xy": [1659, 908],
+        "nome": "Regulator",
+        "descrição": "Regulador de tensão modelo: SPX1117M3-L-5",
+        "obs": "Componente eletrônico.",
+        "pino": "pinoPiscina.png"
+    },
+    {
+        "xy": [2603, 1556],
+        "nome": "ATmega16U2",
+        "descrição": "O chip atua como uma ponte entre a porta USB do computador e a porta serial do Microcontrolador ATMega328p.",
+        "obs": "Através dos conectores ICSP1, é possível atualizar o firmware do ATmega16u2.",
+        "pino": "pinoPiscina.png"
+    },
+    {
+        "xy": [1807, 1560],
+        "nome": "Amplificador operacional",
+        "descrição": "Amplificador operacional modelo: LMV358LIST-A.9 IC",
+        "obs": "Componente eletrônico.",
+        "pino": "pinoPiscina.png"
+    },
+    {
+        "xy": [2167, 684],
+        "nome": "Capacitor",
+        "descrição": "Chip Capacitor, <em> high density</em>.",
+        "obs": "Componente eletrônico.",
+        "pino": "pinoPiscina.png"
+    },
+    {
+        "xy": [3270, 1330],
+        "nome": "Reset do ICSP 1",
+        "descrição": "Pino de reset do <em>In-circuit serial programming</em> (ICSP) 1 do ATmega16U2.",
+        "obs": "Este pino pode ser usado na atualização do firmware do ATmega16U2.",
+        "pino": "pinoCinza.png"
+    },
+    {
+        "xy": [3270, 1470],
+        "nome": "SCK do ICSP 1",
+        "descrição": "Pino de <em>Serial Clock</em> do <em>In-circuit serial programming<em> (ICSP) 1 do ATmega16U2",
+        "obs": "Este pino pode ser usado na atualização do firmware do ATmega16U2.",
+        "pino": "pinoCinza.png"
+    },
+    {
+        "xy": [3270, 1605],
+        "nome": "CIPO do ICSP 1",
+        "descrição": "Pino do <em>Controller In Peripheral Out</em> (CIPO) do <em>In-circuit serial programming<em> (ICSP) 1 do ATmega16U2",
+        "obs": "O Arduino mudou a terminoloia de <em>Master/Slave</em> para <em>Controller/Peripheral</em>, atualizando o termo <em>Master In Slave Out</em> (MISO) para <em>Controller In, Peripheral Out </em> (CIPO) - pode ser encontrado como <em>Main In Secondary Out</em>.",
+        "pino": "pinoCinza.png"
+    },
+    {
+        "xy": [3130, 1330],
+        "nome": "Gground (GND)",
+        "descrição": "Pino com tensão de referência 'terra' (<em>ground</em>).",
+        "obs": "O <em>ground</em> é o polo negativo, por vezes indicado com o sinal '-'. Todos os pinos GND na placa estão conectados.",
+        "pino": "pinoAzul.png"
+    },
+    {
+        "xy": [3130, 1470],
+        "nome": "COPI do ICSP 1",
+        "descrição": "Pino do <em>Controller Out Peripheral In</em> (COPI) do <em>In-circuit serial programming<em> (ICSP) 1 do ATmega16U2",
+        "obs": "O Arduino mudou a terminoloia de <em>Master/Slave</em> para <em>Controller/Peripheral</em>, atualizando o termo <em>Master Out Slave In</em> (MOSI) para <em>Controller Out Peripheral In</em> (COPI) - pode ser encontrado como <em>Main Out Secondary In</em>.",
+        "pino": "pinoCinza.png"
+    },
+    {
+        "xy": [3130, 1605],
+        "nome": "5V",
+        "descrição": "Pino com tensão de saída de 5V regulado pela placa.",
+        "obs": "A corrente máxima do pino de 5V depende de como a placa está sendo alimentada, se for pela porta USB conectada no computador, é provável que seja limitada em 500mA. A alimentação de tensão do Arduino não deve ser por este pino, pois ignora o regulador interno e pode danificar a placa.",
+        "pino": "pinoVermelho.png"
+    },
+    {
+        "xy": [2090, 3920],
+        "nome": "Reset do ICSP",
+        "descrição": "Pino de reset do <em>In-circuit serial programming</em> (ICSP) do ATmega328P.",
+        "obs": "Pino para resetar o microcontrolador ATmega328P",
+        "pino": "pinoCinza.png"
+    },
+    {
+        "xy": [2220, 3920],
+        "nome": "SCK do ICSP",
+        "descrição": "Pino de <em>Serial Clock</em> do <em>In-circuit serial programming</em> (ICSP) do ATmega328P",
+        "obs": "Este pino está conectado ao pino D13.",
+        "pino": "pinoCinza.png"
+    },
+    {
+        "xy": [2355, 3920],
+        "nome": "CIPO do ICSP",
+        "descrição": "É o pino de <em>Controller In, Peripheral Out</em> (CIPO) do <em>In-circuit serial programming</em> (ICSP) do ATmega328P.",
+        "obs": " O Arduino mudou a terminoloia de <em>Master/Slave</em> para <em>Controller/Peripheral</em>, atualizando o termo <em>Master In Slave Out</em> (MISO) para <em>Controller In, Peripheral Out </em> (CIPO) - pode ser encontrado como <em>Main In Secondary Out</em>. Este pino está conectado ao pino D12.",
+        "pino": "pinoCinza.png"
+    },
+    {
+        "xy": [2090, 4058],
+        "nome": "Ground (GND)",
+        "descrição": "Pino com tensão de referência 'terra' (<em>ground</em>).",
+        "obs": "O <em>ground</em> é o polo negativo, por vezes indicado com o sinal '-'. Todos os pinos GND na placa estão conectados.",
+        "pino": "pinoAzul.png"
+    },
+    {
+        "xy": [2220, 4058],
+        "nome": "COPI do ICSP",
+        "descrição": "Pino do <em>Controller Out Peripheral In</em> (COPI) do <em>In-circuit serial programming<em> (ICSP) do ATmega328P",
+        "obs": "O Arduino mudou a terminoloia de <em>Master/Slave</em> para <em>Controller/Peripheral</em>, atualizando o termo <em>Master Out Slave In</em> (MOSI) para <em>Controller Out Peripheral In</em> (COPI) - pode ser encontrado como <em>Main Out Secondary In</em>. Este pino está conectado ao pino D11.",
+        "pino": "pinoCinza.png"
+    },
+    {
+        "xy": [2355, 4058],
+        "nome": "5V",
+        "descrição": "Pino com tensão de saída de 5V regulado pela placa.",
+        "obs": "A corrente máxima do pino de 5V depende de como a placa está sendo alimentada, se for pela porta USB conectada no computador, é provável que seja limitada em 500mA. A alimentação de tensão do Arduino não deve ser por este pino, pois ignora o regulador interno e pode danificar a placa.",
+        "pino": "pinoVermelho.png"
+    },
+    {
+        "xy": [3423, 804],
+        "nome": "Botão de reset",
+        "descrição": "Botão para resetar a placa",
+        "obs": "Botão tipo chave táctil ou push button.",
+        "pino": "pinoPiscina.png"
+    }
+]

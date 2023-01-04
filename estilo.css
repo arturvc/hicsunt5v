@@ -1,0 +1,79 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Chivo Mono', monospace;
+}
+
+.geral {
+    height: calc(100vh - 30px);
+}
+
+.menu {
+    margin: 10px;
+    height: 40px;
+    background-color: #8a7867;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #dddddd;
+    text-decoration: none;
+}
+
+
+#item1,
+#item2 {
+    padding: 10px;
+    flex-basis: 50px;
+}
+
+.caixaMapa {
+    margin: 10px;
+    height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.caixaTexto {
+    margin: 10px;
+    height: calc(100vh - 90px);
+    display: flex;
+    justify-content: left;
+    color: #8a7867;
+    background-color: #dddddd;
+
+}
+
+.titulo {
+    width: 2000px;
+}
+
+#itemMapa {
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+.icone-textual {
+    background: none;
+    border: none;
+    font-size: 1.4em;
+    color: #017481;
+    white-space: nowrap;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+
+}
+
+
+#info_text {
+    font-size: 2em;
+    color: #8a7867;
+    font-family: 'Chivo Mono', monospace;
+}
