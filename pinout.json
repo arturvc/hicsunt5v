@@ -21,7 +21,7 @@
     },
     {
         "xy": [841, 2395],
-        "nome": "+3.3V ou 3v3",
+        "nome": "3.3V",
         "descrição": "Pino com tensão de saída de 3.3V regulado pela placa",
         "obs": "A corrente máxima do pino de 3.3V é 50mA.",
         "pino": "pinoVermelho.png"
