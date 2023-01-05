@@ -144,7 +144,7 @@ function carregarMapa() {
 
             var text = L.DomUtil.create('div');
             text.id = "info_text";
-            text.innerHTML = "<strong><em>Hic sunt 5V</em></strong>"
+            text.innerHTML = "<strong>Hic sunt 5V</strong>"
             return text;
         },
 

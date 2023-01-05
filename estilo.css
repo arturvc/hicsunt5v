@@ -57,20 +57,11 @@ a:active {
     flex: 1;
     text-align: center;
 }
-
-.icone-textual {
-    background: none;
-    border: none;
-    font-size: 1.4em;
-    color: #017481;
-    white-space: nowrap;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0px;
-    padding: 0px;
-    font-weight: bold;
-
+#itemTexto {
+    padding: 20px;
+    flex: 1;
+    text-align: left;
 }
-
 
 #info_text {
     font-size: 2em;

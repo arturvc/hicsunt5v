@@ -336,14 +336,14 @@
     {
         "xy": [3270, 1470],
         "nome": "SCK do ICSP 1",
-        "descrição": "Pino de <em>Serial Clock</em> do <em>In-circuit serial programming<em> (ICSP) 1 do ATmega16U2",
+        "descrição": "Pino de <em>Serial Clock</em> do <em>In-circuit serial programming</em> (ICSP) 1 do ATmega16U2",
         "obs": "Este pino pode ser usado na atualização do firmware do ATmega16U2.",
         "pino": "pinoCinza.png"
     },
     {
         "xy": [3270, 1605],
         "nome": "CIPO do ICSP 1",
-        "descrição": "Pino do <em>Controller In Peripheral Out</em> (CIPO) do <em>In-circuit serial programming<em> (ICSP) 1 do ATmega16U2",
+        "descrição": "Pino do <em>Controller In Peripheral Out</em> (CIPO) do <em>In-circuit serial programming</em> (ICSP) 1 do ATmega16U2",
         "obs": "O Arduino mudou a terminoloia de <em>Master/Slave</em> para <em>Controller/Peripheral</em>, atualizando o termo <em>Master In Slave Out</em> (MISO) para <em>Controller In, Peripheral Out </em> (CIPO) - pode ser encontrado como <em>Main In Secondary Out</em>.",
         "pino": "pinoCinza.png"
     },
@@ -357,7 +357,7 @@
     {
         "xy": [3130, 1470],
         "nome": "COPI do ICSP 1",
-        "descrição": "Pino do <em>Controller Out Peripheral In</em> (COPI) do <em>In-circuit serial programming<em> (ICSP) 1 do ATmega16U2",
+        "descrição": "Pino do <em>Controller Out Peripheral In</em> (COPI) do <em>In-circuit serial programming</em> (ICSP) 1 do ATmega16U2",
         "obs": "O Arduino mudou a terminoloia de <em>Master/Slave</em> para <em>Controller/Peripheral</em>, atualizando o termo <em>Master Out Slave In</em> (MOSI) para <em>Controller Out Peripheral In</em> (COPI) - pode ser encontrado como <em>Main Out Secondary In</em>.",
         "pino": "pinoCinza.png"
     },
