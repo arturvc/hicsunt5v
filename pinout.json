@@ -253,7 +253,7 @@
         "xy": [1103, 792],
         "nome": "Conector P4",
         "descrição": "Conector (ou <em>jack</em>) para alimentar a placa.",
-        "obs": "Conector P4 de 2.1x5.5mm, com polo positivo no centro e polo negativo na borda do plugue. A tensão de alimentação pode ser na faixa de 6 a 20V, e preferencialmente de 7 a 12V. na. O polo positivo da tensão alimentada pelo conector P4 é replicado no pino Vin.",
+        "obs": "Conector P4 de 2.1x5.5mm, com polo positivo no centro e polo negativo na borda do plugue. A tensão de alimentação pode ser na faixa de 6 a 20V, e preferencialmente de 7 a 12V. O polo positivo da tensão alimentada pelo conector P4 é replicado no pino Vin.",
         "pino": "pinoMagenta.png"
     },
     {
