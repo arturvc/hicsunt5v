@@ -380,14 +380,14 @@
         "nome": "SCK do ICSP",
         "descrição": "Pino de <em>Serial Clock</em> do <em>In-circuit serial programming</em> (ICSP) do ATmega328P",
         "obs": "Este pino está conectado ao pino D13.",
-        "pino": "pinoCinza.png"
+        "pino": "pinoLaranja.png"
     },
     {
         "xy": [2355, 3920],
         "nome": "CIPO do ICSP",
         "descrição": "É o pino de <em>Controller In, Peripheral Out</em> (CIPO) do <em>In-circuit serial programming</em> (ICSP) do ATmega328P.",
         "obs": " O Arduino mudou a terminoloia de <em>Master/Slave</em> para <em>Controller/Peripheral</em>, atualizando o termo <em>Master In Slave Out</em> (MISO) para <em>Controller In, Peripheral Out </em> (CIPO) - pode ser encontrado como <em>Main In Secondary Out</em>. Este pino está conectado ao pino D12.",
-        "pino": "pinoCinza.png"
+        "pino": "pinoLaranja.png"
     },
     {
         "xy": [2090, 4058],
@@ -401,7 +401,7 @@
         "nome": "COPI do ICSP",
         "descrição": "Pino do <em>Controller Out Peripheral In</em> (COPI) do <em>In-circuit serial programming<em> (ICSP) do ATmega328P",
         "obs": "O Arduino mudou a terminoloia de <em>Master/Slave</em> para <em>Controller/Peripheral</em>, atualizando o termo <em>Master Out Slave In</em> (MOSI) para <em>Controller Out Peripheral In</em> (COPI) - pode ser encontrado como <em>Main Out Secondary In</em>. Este pino está conectado ao pino D11.",
-        "pino": "pinoCinza.png"
+        "pino": "pinoLaranja.png"
     },
     {
         "xy": [2355, 4058],
