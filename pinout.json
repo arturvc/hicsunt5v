@@ -349,7 +349,7 @@
     },
     {
         "xy": [3130, 1330],
-        "nome": "Gground (GND)",
+        "nome": "Ground (GND)",
         "descrição": "Pino com tensão de referência 'terra' (<em>ground</em>).",
         "obs": "O <em>ground</em> é o polo negativo, por vezes indicado com o sinal '-'. Todos os pinos GND na placa estão conectados.",
         "pino": "pinoAzul.png"
