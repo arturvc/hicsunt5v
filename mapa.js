@@ -9,21 +9,17 @@ async function infoDatasheet() {
     carregarMapa();
 }
 
-
-
-
-
-
-
-
-
 function carregarMapa() {
 
     var mapa = L.map('itemMapa', {
         crs: L.CRS.Simple,
+        zoomSnap: 0.2,
+        zoomDelta: 0.2,
+        wheelPxPerZoomLevel: 180,
         zoom: -3,
         minZoom: -3,
         maxZoom: -1
+        
     });
 
 
