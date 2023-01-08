@@ -260,7 +260,7 @@
         "xy": [2807, 792],
         "nome": "Conector USB",
         "descrição": "Conector USB tipo B.",
-        "obs": "Conector USB liadao ao microcontrolador ATMega16U2. A tensão máxima de entrada é de 5.5V, e a corrente máxima é provável que seja 500mA.",
+        "obs": "Conector USB ligado ao microcontrolador ATMega16U2. A tensão máxima de entrada é de 5.5V, e a corrente máxima é provável que seja 500mA.",
         "pino": "pinoMagenta.png"
     },
     {
