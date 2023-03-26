@@ -52,7 +52,6 @@ a:active {
     margin-top: 0px;
     font-size: smaller;
 }
-
 .titulo {
     width: 2000px;
 }
@@ -60,7 +59,7 @@ a:active {
 #itemMapa {
     padding: 10px;
     flex: 1;
-    text-align: center;
+    /*text-align: center;*/
 }
 #itemTexto {
     padding: 20px;

@@ -9,6 +9,19 @@ async function infoDatasheet() {
     carregarMapa();
 }
 
+let marcadoresAzul = [];
+let marcadoresCinza = [];
+let marcadoresLaranja = [];
+let marcadoresMagenta = [];
+let marcadoresPiscina = [];
+let marcadoresVerde = [];
+let marcadoresVermelho = [];
+
+
+
+
+
+
 function carregarMapa() {
 
     var mapa = L.map('itemMapa', {
@@ -19,7 +32,7 @@ function carregarMapa() {
         zoom: -3,
         minZoom: -3,
         maxZoom: -1
-        
+
     });
 
 
@@ -76,9 +89,9 @@ function carregarMapa() {
     ];
 
     L.polygon([icsp1], {
-            color: 'pink',
-            fillOpacity: 0.1,
-        })
+        color: 'pink',
+        fillOpacity: 0.1,
+    })
         .bindPopup(`
     <p><b>In-circuit serial programming (ICSP) 1</b></br>
     Conectores para programar o chip ATmega16U2, que faz a comunicação com a porta USB.</br>
@@ -86,9 +99,9 @@ function carregarMapa() {
         .addTo(mapa);
 
     L.polygon([icsp], {
-            color: 'pink',
-            fillOpacity: 0.1,
-        })
+        color: 'pink',
+        fillOpacity: 0.1,
+    })
         .bindPopup(`
     <p><b>In-circuit serial programming (ICSP)</b></br>
     Conectores para programar o chip ATmega328P</br>
@@ -99,9 +112,9 @@ function carregarMapa() {
 
 
     L.polygon([pinos16u2], {
-            color: 'pink',
-            fillOpacity: 0.1,
-        })
+        color: 'pink',
+        fillOpacity: 0.1,
+    })
         .bindPopup(`
     <p><b>Conectores do ATMega16U2</b>: </br>
     <em>Hic Sunt Dracones</em> </br>
@@ -109,26 +122,68 @@ function carregarMapa() {
         .addTo(mapa);
 
 
-    for (let i = 0; i < 60; i++) {
+    //for (let i = 0; i < 60; i++) {
 
-        //let valor = JSON.stringify(pinos[i].pino);
-        //console.log(valor);
+    //let valor = JSON.stringify(pinos[i].pino);
+    //console.log(valor);
 
-        L.marker(pinos[i].xy, {
-                icon: L.icon({
-                    iconUrl: pinos[i].pino,
-                    iconSize: [40, 55],
-                    iconAnchor: [20, 55],
-                    popupAnchor: [0, -55]
-                })
-            })
-            .bindPopup(`
-        <p><b>${pinos[i].nome}</b></br>
-        ${pinos[i].descrição}</br>
-        Obs.: ${pinos[i].obs}</p>`)
-            .addTo(mapa);
+    carregarMarcadores("pinoAzul.png", marcadoresAzul);
+    carregarMarcadores("pinoCinza.png", marcadoresCinza);
+    carregarMarcadores("pinoLaranja.png", marcadoresLaranja);
+    carregarMarcadores("pinoMagenta.png", marcadoresMagenta);
+    carregarMarcadores("pinoPiscina.png", marcadoresPiscina);
+    carregarMarcadores("pinoVerde.png", marcadoresVerde);
+    carregarMarcadores("pinoVermelho.png", marcadoresVermelho);
 
-    }
+
+    //function carregarMarcadores(pino, xy, nome, descricao, obs, tipo, marcador) {
+
+
+    // if (pinos[i].pino == "pinoAzul.png") {
+    //     //marcadoresAzul[i] = L.marker(pinos[i].xy, {
+
+    //     marcadoresAzul.push(L.marker(pinos[i].xy, {
+    //         icon: L.icon({
+    //             iconUrl: pinos[i].pino,
+    //             iconSize: [40, 55],
+    //             iconAnchor: [20, 55],
+    //             popupAnchor: [0, -55]
+    //         })
+    //     })
+    //         .bindPopup(`
+    // <p><b>${pinos[i].nome}</b></br>
+    // ${pinos[i].descrição}</br>
+    // Obs.: ${pinos[i].obs}</p>`)
+    //     )
+    // };
+
+    // }
+
+
+
+
+    let grupoAzul = L.layerGroup(marcadoresAzul).addTo(mapa);
+    let grupoCinza = L.layerGroup(marcadoresCinza).addTo(mapa);
+    let grupoLaranja = L.layerGroup(marcadoresLaranja).addTo(mapa);
+    let grupoMagenta = L.layerGroup(marcadoresMagenta).addTo(mapa);
+    let grupoPiscina = L.layerGroup(marcadoresPiscina).addTo(mapa);
+    let grupoVerde = L.layerGroup(marcadoresVerde).addTo(mapa);
+    let grupoVermelho = L.layerGroup(marcadoresVermelho).addTo(mapa);
+
+
+
+    
+    let overlayMarcador = {
+        "Tensão de alimentação": grupoMagenta,
+        "5V": grupoVermelho,
+        "Ground / GND": grupoAzul,
+        "GPIO": grupoLaranja,
+        "Componentes eletrônicos": grupoPiscina,
+        "LED": grupoVerde,
+        "Outros pinos": grupoCinza,
+
+    };
+
 
     //var myIcon = L.divIcon({className: 'icone-textual',html: "<h2>Mapa do Arduino Uno</h2>"});
     //  L.marker([4300, 600], {icon: myIcon}).addTo(mapa);
@@ -156,6 +211,9 @@ function carregarMapa() {
         position: 'topright'
     }).addTo(mapa);
 
+    var layerControl = L.control.layers(null, overlayMarcador).addTo(mapa);
+
+
 
     /*
     var popup = L.popup();
@@ -168,6 +226,30 @@ function carregarMapa() {
     mapa.on('click', onMapClick);
 */
 }
+
+//////////////////////
+function carregarMarcadores(tipo, marcador) {
+    for (let i = 0; i < pinos.length; i++) {
+        if (pinos[i].pino == tipo) {
+            marcador.push(L.marker(pinos[i].xy, {
+                icon: L.icon({
+                    iconUrl: pinos[i].pino,
+                    iconSize: [40, 55],
+                    iconAnchor: [20, 55],
+                    popupAnchor: [0, -55]
+                })
+            })
+                .bindPopup(`
+        <p><b>${pinos[i].nome}</b></br>
+        ${pinos[i].descrição}</br>
+        Obs.: ${pinos[i].obs}</p>`)
+            )
+        }
+        else {
+        }
+    }
+}
+        ///////////////////////
 
 // https://store.arduino.cc/products/arduino-uno-rev3 
 
