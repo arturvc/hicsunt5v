@@ -52,7 +52,7 @@
         "nome": "Vin",
         "descrição": "Pino para alimentar a placa com tensão de entrada positiva.",
         "obs": "O Arduino pode ser alimentado com o polo positivo conectado neste pino (e o polo negativo conectado em um pino GND) ou pelo conector P4 (jack) da placa, com tensão de alimentação na faixa de 6 a 20V, e preferencialmente de 7 a 12V. Se o Arduino estiver plugado na porta USB, este pino tem tensão de saída de 5V, se estiver plugado pelo conector P4 com tensão <em>X</em>, tem a mesma tensão <em>X</em>.",
-        "pino": "pinoVermelho.png"
+        "pino": "pinoMagenta.png"
     },
     {
         "xy": [841, 3225],
