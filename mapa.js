@@ -176,8 +176,8 @@ function carregarMapa() {
     let overlayMarcador = {
         "Tensão de alimentação": grupoMagenta,
         "5V": grupoVermelho,
-        "Ground / GND": grupoAzul,
-        "GPIO": grupoLaranja,
+        "Ground (GND)": grupoAzul,
+        "General Purpose Input/Output (GPIO)": grupoLaranja,
         "Componentes eletrônicos": grupoPiscina,
         "LED": grupoVerde,
         "Outros pinos": grupoCinza,
